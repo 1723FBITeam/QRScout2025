@@ -1,8 +1,9 @@
 {
-  "name": "qrscout",
+  "name": "qrscout2025",
   "private": true,
   "version": "2.0.0",
   "type": "module",
+  "homepage": "https://1723fbiteam.github.io/QRScout2025/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
