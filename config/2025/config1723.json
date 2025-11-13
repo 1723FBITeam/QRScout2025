@@ -1,60 +1,60 @@
 {
-  "title": "QRScout",
-  "page_title": "Reefscape",
+  "title": "QRScout - Team 1723",
+  "page_title": "Reefscape Scouting for FBI",
   "delimiter": "\t",
-  "teamNumber": 2713,
+  "teamNumber": 1723,
   "theme": {
     "light": {
       "background": "0 0% 100%",
-      "foreground": "0 0% 3.9%",
+      "foreground": "220 13% 18%",
       "card": "0 0% 100%",
-      "card_foreground": "0 0% 3.9%",
+      "card_foreground": "220 13% 18%",
       "popover": "0 0% 100%",
-      "popover_foreground": "0 0% 3.9%",
-      "primary": "354.44 71.3% 47.9%",
-      "primary_foreground": "0 85.7% 97.3%",
-      "secondary": "0 0% 96.1%",
-      "secondary_foreground": "0 0% 9%",
-      "muted": "0 0% 96.1%",
-      "muted_foreground": "0 0% 45.1%",
-      "accent": "0 0% 96.1%",
-      "accent_foreground": "0 0% 9%",
-      "destructive": "0 84.2% 60.2%",
+      "popover_foreground": "220 13% 18%",
+      "primary": "95 48% 51%",
+      "primary_foreground": "0 0% 98%",
+      "secondary": "220 14% 96%",
+      "secondary_foreground": "220 13% 18%",
+      "muted": "220 14% 96%",
+      "muted_foreground": "220 8% 46%",
+      "accent": "220 14% 96%",
+      "accent_foreground": "220 13% 18%",
+      "destructive": "0 84% 60%",
       "destructive_foreground": "0 0% 98%",
-      "border": "0 0% 89.8%",
-      "input": "0 0% 89.8%",
-      "ring": "354.44 71.3% 47.9%",
-      "chart_1": "12 76% 61%",
-      "chart_2": "173 58% 39%",
-      "chart_3": "197 37% 24%",
-      "chart_4": "43 74% 66%",
-      "chart_5": "27 87% 67%"
+      "border": "220 13% 91%",
+      "input": "220 13% 91%",
+      "ring": "95 48% 51%",
+      "chart_1": "95 48% 51%",
+      "chart_2": "200 100% 45%",
+      "chart_3": "240 100% 55%",
+      "chart_4": "180 100% 40%",
+      "chart_5": "260 100% 60%"
     },
     "dark": {
-      "background": "0 0% 3.9%",
-      "foreground": "0 0% 98%",
-      "card": "0 0% 3.9%",
-      "card_foreground": "0 0% 98%",
-      "popover": "0 0% 3.9%",
-      "popover_foreground": "0 0% 98%",
-      "primary": "354.44 71.3% 47.9%",
-      "primary_foreground": "0 85.7% 97.3%",
-      "secondary": "0 0% 14.9%",
-      "secondary_foreground": "0 0% 98%",
-      "muted": "0 0% 14.9%",
-      "muted_foreground": "0 0% 63.9%",
-      "accent": "0 0% 14.9%",
-      "accent_foreground": "0 0% 98%",
-      "destructive": "0 62.8% 30.6%",
-      "destructive_foreground": "0 0% 98%",
-      "border": "0 0% 14.9%",
-      "input": "0 0% 14.9%",
-      "ring": "354.44 71.3% 47.9%",
-      "chart_1": "220 70% 50%",
-      "chart_2": "160 60% 45%",
-      "chart_3": "30 80% 55%",
-      "chart_4": "280 65% 60%",
-      "chart_5": "340 75% 55%"
+      "background": "220 13% 9%",
+      "foreground": "0 0% 95%",
+      "card": "220 13% 9%",
+      "card_foreground": "0 0% 95%",
+      "popover": "220 13% 9%",
+      "popover_foreground": "0 0% 95%",
+      "primary": "95 48% 51%",
+      "primary_foreground": "220 13% 9%",
+      "secondary": "220 13% 15%",
+      "secondary_foreground": "0 0% 95%",
+      "muted": "220 13% 15%",
+      "muted_foreground": "220 8% 65%",
+      "accent": "220 13% 15%",
+      "accent_foreground": "0 0% 95%",
+      "destructive": "0 75% 55%",
+      "destructive_foreground": "0 0% 95%",
+      "border": "220 13% 15%",
+      "input": "220 13% 15%",
+      "ring": "95 48% 51%",
+      "chart_1": "95 48% 51%",
+      "chart_2": "200 100% 55%",
+      "chart_3": "240 100% 65%",
+      "chart_4": "180 100% 50%",
+      "chart_5": "260 100% 70%"
     }
   },
   "sections": [
@@ -80,7 +80,7 @@
           "defaultValue": 1
         },
         {
-          "title": "Robot",
+          "title": "Robot Position",
           "description": "The robot you are scouting this match, based on driver station position.",
           "type": "select",
           "required": true,
@@ -143,10 +143,10 @@
       ]
     },
     {
-      "name": "Auto",
+      "name": "Autonomous",
       "fields": [
         {
-          "title": "Moved?",
+          "title": "Moved in Auto",
           "description": "Check if the robot moved during autonomous.",
           "type": "boolean",
           "required": false,
@@ -155,7 +155,7 @@
           "defaultValue": false
         },
         {
-          "title": "Timer",
+          "title": "Auto Timer",
           "description": "The time it took for the robot to finish autonomous.",
           "type": "timer",
           "required": false,
@@ -230,7 +230,8 @@
           "step": 1
         },
         {
-          "title": "Intentionally Removed Algae?",
+          "title": "Intentionally Removed Algae",
+          "description": "Did the robot intentionally remove algae from the opponent's side?",
           "type": "boolean",
           "required": false,
           "code": "dto",
@@ -238,7 +239,8 @@
           "defaultValue": false
         },
         {
-          "title": "Auto Foul",
+          "title": "Auto Fouls",
+          "description": "Number of fouls committed during autonomous",
           "type": "counter",
           "required": false,
           "code": "auf",
@@ -250,10 +252,11 @@
       ]
     },
     {
-      "name": "Teleop",
+      "name": "Teleoperated",
       "fields": [
         {
-          "title": "Intentionally Removed Algae?",
+          "title": "Intentionally Removed Algae",
+          "description": "Did the robot intentionally remove algae during teleop?",
           "type": "boolean",
           "required": false,
           "code": "daT",
@@ -262,6 +265,7 @@
         },
         {
           "title": "Pickup Location",
+          "description": "Where did the robot pick up game pieces?",
           "type": "select",
           "required": false,
           "code": "TGPL",
@@ -277,7 +281,7 @@
         },
         {
           "title": "Coral L1 Scored",
-          "description": "The number of level 1 coral scored during autonomous.",
+          "description": "The number of level 1 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLOT",
@@ -288,7 +292,7 @@
         },
         {
           "title": "Coral L2 Scored",
-          "description": "The number of level 2 coral scored during autonomous.",
+          "description": "The number of level 2 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLTT",
@@ -299,7 +303,7 @@
         },
         {
           "title": "Coral L3 Scored",
-          "description": "The number of level 3 coral scored during autonomous.",
+          "description": "The number of level 3 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLThT",
@@ -310,7 +314,7 @@
         },
         {
           "title": "Coral L4 Scored",
-          "description": "The number of level 4 coral scored during autonomous.",
+          "description": "The number of level 4 coral scored during teleop.",
           "type": "counter",
           "required": false,
           "code": "CLFT",
@@ -321,7 +325,7 @@
         },
         {
           "title": "Barge Algae Scored",
-          "description": "The number of Algae scored in the barge during autonomous.",
+          "description": "The number of Algae scored in the barge during teleop.",
           "type": "counter",
           "required": false,
           "code": "BAST",
@@ -332,7 +336,7 @@
         },
         {
           "title": "Processor Algae Scored",
-          "description": "The number of Algae scored in the processor during autonomous.",
+          "description": "The number of Algae scored in the processor during teleop.",
           "type": "counter",
           "required": false,
           "code": "PAST",
@@ -342,7 +346,8 @@
           "step": 1
         },
         {
-          "title": "Crossed Field/Played Defense?",
+          "title": "Crossed Field/Played Defense",
+          "description": "Did the robot cross the field or play defense?",
           "type": "boolean",
           "required": false,
           "code": "CFPDT",
@@ -350,7 +355,8 @@
           "defaultValue": false
         },
         {
-          "title": "Was Robot Defended by Other Alliance?",
+          "title": "Was Defended",
+          "description": "Was this robot defended by the opposing alliance?",
           "type": "boolean",
           "required": false,
           "code": "DEFEg",
@@ -358,7 +364,8 @@
           "defaultValue": false
         },
         {
-          "title": "Touched Opposing Cage?",
+          "title": "Cage Contact Fouls",
+          "description": "Number of times robot touched opposing cage",
           "type": "counter",
           "required": false,
           "code": "Fou/Tech",
@@ -373,6 +380,7 @@
       "fields": [
         {
           "title": "End Position",
+          "description": "Where did the robot end the match?",
           "type": "select",
           "required": true,
           "code": "epo",
@@ -387,7 +395,8 @@
           }
         },
         {
-          "title": "Died?",
+          "title": "Robot Died",
+          "description": "Did the robot stop functioning during the match?",
           "type": "boolean",
           "required": false,
           "code": "DEg",
@@ -395,7 +404,8 @@
           "defaultValue": false
         },
         {
-          "title": "Tipped/Fell Over?",
+          "title": "Tipped/Fell Over",
+          "description": "Did the robot tip over or fall during the match?",
           "type": "boolean",
           "required": false,
           "code": "TFOT",
@@ -405,10 +415,11 @@
       ]
     },
     {
-      "name": "Postmatch",
+      "name": "Post-Match",
       "fields": [
         {
-          "title": "Offense Skill",
+          "title": "Offense Rating",
+          "description": "Rate the robot's offensive capability (1-5)",
           "type": "range",
           "required": false,
           "code": "or",
@@ -419,7 +430,8 @@
           "step": 1
         },
         {
-          "title": "Defensive Skill",
+          "title": "Defense Rating",
+          "description": "Rate the robot's defensive capability (0-5)",
           "type": "range",
           "required": false,
           "code": "dr",
@@ -430,7 +442,8 @@
           "step": 1
         },
         {
-          "title": "Yellow/Red Card",
+          "title": "Penalty Cards",
+          "description": "Did the robot receive any penalty cards?",
           "type": "select",
           "required": true,
           "code": "yc",
@@ -444,6 +457,7 @@
         },
         {
           "title": "Comments",
+          "description": "Additional notes about the robot's performance",
           "type": "text",
           "required": false,
           "code": "co",
